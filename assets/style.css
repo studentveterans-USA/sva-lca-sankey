@@ -224,16 +224,14 @@ li {
 }
 
 a:link {
-  color: #A0001F;
-  opacity:0.7;
+  color: #ff0031;
   font-weight:bold;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #A0001F;
-   opacity:0.7;
+  color: #ff0031;
   font-weight:bold;
   text-decoration: none;
 }
@@ -241,7 +239,7 @@ a:visited {
 /* mouse over link */
 a:hover {
   opacity: 0.9;
-  color: #A0001F;
+  color: #ff0031;
   font-weight: bold;
   text-decoration: underline;
 }
