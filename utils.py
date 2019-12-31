@@ -60,17 +60,17 @@ def get_menu():
         [
            dcc.Link(
                'Overview',
-               href="/Heroku_Deployment_v2/Visualization/Overview",
+               href="/Visualization/Overview",
                className='tab first'
            ),
             dcc.Link(
                 "Data Visualization",
-                href="/Heroku_Deployment_v2/Visualization/Sankey",
+                href="/Visualization/Sankey",
                 className='tab'
             ),
             dcc.Link(
                 "SVA Research",
-                href="/Heroku_Deployment_v2/Visualization/SVA_Research",
+                href="/Visualization/SVA_Research",
                 className='tab'
             ),
         ],
