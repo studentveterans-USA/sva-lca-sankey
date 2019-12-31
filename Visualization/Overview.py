@@ -8,9 +8,8 @@ from Visualization import (
     Overview,
     Sankey,
     SVA_Research,
-    utils
 )
-from utils import Header, get_header, get_menu, make_dash_table
+#from utils import Header, get_header, get_menu, make_dash_table
 
 decision_points = {'Options':["A) Enlisted", "B) Military and Enrolled in School", "C) School & Reserves/Nat. Guard", "D) School", "E) Transferred", "F) Work", "G) Work & Reserves/Nat. Guard", "H) Work & School", "I) Retirement"], 'Descriptions':["Active duty military service", "ROTC, Military Academy, etc.", "Military reservist or National Guard while enrolled in school", "Enrolled in post-secondary education", "Transferred to a different post-secondary institution", "Worked full-time non-military job", "Worked full-time non-military job and joined Reserves or National Gueard", "Worked full-time non-military job and enrolled in post-secondary education", "No longer working, going to school, or in military"]}
 decision_points_df = pd.DataFrame(decision_points)
