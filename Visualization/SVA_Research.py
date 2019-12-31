@@ -9,7 +9,7 @@ from Visualization import (
     Sankey,
     SVA_Research
 )
-#from utils import Header, get_header, get_menu, make_dash_table
+from utils import Header, get_header, get_menu, make_dash_table
 
 
 def create_layout(app):
