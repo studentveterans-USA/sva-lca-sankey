@@ -33,9 +33,9 @@ app.config['suppress_callback_exceptions']=True
 @app.callback(Output('page_content', 'children'),
               [Input('url', 'pathname')])
 def update_app(pathname):
-    if pathname == "/Heroku_Deployment_v2/Visualization/Sankey":
+    if pathname == "/Visualization/Sankey":
         return Sankey.create_layout(app)
-    elif pathname == "/Heroku_Deployment_v2/Visualization/SVA_Research":
+    elif pathname == "/Visualization/SVA_Research":
         return SVA_Research.create_layout(app)
     else:
         return Overview.create_layout(app)
