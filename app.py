@@ -7,8 +7,7 @@ from dash.dependencies import Input, Output, State
 from Visualization import (
     Overview,
     Sankey,
-    SVA_Research,
-    utils
+    SVA_Research
 )
 
 layout=dict(
