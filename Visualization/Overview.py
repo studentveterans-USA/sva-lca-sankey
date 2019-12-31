@@ -51,7 +51,7 @@ def create_layout(app):
 
                                         "Respondants were given nine different options (see table below) to describe their key decisions."
                                         "These decisions were analyzed in-depth for insight. Common first decisions after high school are represented in the graphs below. For more detailed analysis about complete paths, please see the ",
-                                        html.A("Data Visualization section.", href="/Heroku_Deployment_v2/Visualization/Sankey")
+                                        html.A("Data Visualization section.", href="/Visualization/Sankey")
                                     ]
                                         ,
                                         className="row",
