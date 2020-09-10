@@ -5,14 +5,6 @@ import dash_html_components as html
 from dash.dependencies import Input, Output, State
 import pandas as pd
 import plotly.graph_objs as go
-from Visualization import (
-    Overview,
-    Sankey,
-    SVA_Research,
-    utils
-)
-from utils import Header, get_header, get_menu, make_dash_table
-
 
 ####################################################### Data ###########################################################
 df = pd.read_csv("LCA_Sankey_Processed_Data.csv")
