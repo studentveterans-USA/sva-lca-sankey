@@ -4,11 +4,7 @@ import pandas as pd
 import dash_html_components as html
 import plotly.graph_objs as go
 from dash.dependencies import Input, Output, State
-from Visualization import (
-    Overview,
-    Sankey,
-    SVA_Research
-)
+
 
 layout=dict(
         height='800',
@@ -33,12 +29,10 @@ app.config['suppress_callback_exceptions']=True
 @app.callback(Output('page_content', 'children'),
               [Input('url', 'pathname')])
 def update_app(pathname):
-    if pathname == "/Visualization/Sankey":
+    if pathname == "/Sankey":
         return Sankey.create_layout(app)
-    elif pathname == "/Visualization/SVA_Research":
-        return SVA_Research.create_layout(app)
     else:
-        return Overview.create_layout(app)
+        return Sankey.create_layout(app)
 
 
 ################################ Clear Filter- Dash Table##################
