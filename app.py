@@ -25,16 +25,6 @@ app.layout = html.Div(
 app.config['suppress_callback_exceptions']=True
 
 
-################################ Update App ##################################
-@app.callback(Output('page_content', 'children'),
-              [Input('url', 'pathname')])
-def update_app(pathname):
-    if pathname == "/Sankey":
-        return Sankey.create_layout(app)
-    else:
-        return Sankey.create_layout(app)
-
-
 ################################ Clear Filter- Dash Table##################
 @app.callback(
     Output('LCA_Datatable', 'filter_query'),
